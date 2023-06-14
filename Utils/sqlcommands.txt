@@ -1,0 +1,16 @@
+Create vacations table
+========================
+CREATE TABLE IF NOT EXISTS `vac_project`.`vacations` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `destination` VARCHAR(45) NOT NULL,
+  `description` VARCHAR(45) NOT NULL,
+  `startDate` VARCHAR(45) NOT NULL,
+  `endDate` VARCHAR(45) NOT NULL,
+  `price` VARCHAR(45) NOT NULL,
+  `vacImage` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`));
+
+Create new vacation
+=========================
+INSERT INTO `vac_project`.`vacations` (`destination`, `description`, `startDate`, `endDate`) VALUES ('isr', 'fun here', '12/12/2023', '9/12/2023');
+
